@@ -1,21 +1,17 @@
-@font-face {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "poppins-medium";
-    src: url(../material/fonts/Poppins-Medium.ttf);
 }
-@font-face {
-    font-family: "poppins-bold";
-    src: url(../material/fonts/Poppins-Bold.ttf);
-}
-@font-face {
-    font-family: "poppins-light";
-    src: url(../material/fonts/Poppins-Light.ttf);
-}
-@font-face {
-    font-family: "poppins-semibold";
-    src: url(../material/fonts/Poppins-SemiBold.ttf);
-}
+
+
+
+
+/* Color start */
 :root{
     --primary: #9c2723;
+    --primarya: #9c2723c4;
     --secondary: #332e27;
     --black: #000;
     --ternary: #fcfcfc;
@@ -28,24 +24,80 @@
     --light-yellow: #ff9900;
     --icon-color:   #F0C53E;
 }
+/* Color end */
 
-.container{
-    padding: 0 4rem;
+
+
+
+
+/* Google Fonts satrt*/
+@font-face {
+    font-family: "poppins-regular";
+    src: url(../material/fonts/Poppins-Regular.ttf);
 }
+@font-face {
+    font-family: "poppins-medium";
+    src: url(../material/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "poppins-bold";
+    src: url(../material/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "poppins-semibold";
+    src: url(../material/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: "poppins-light";
+    src: url(../material/fonts/Poppins-Light.ttf);
+}
+/* Google Fonts end*/
+
+
+
+
+
+
+/* Utility styling start */
 .section-heading{
-    text-align: center;
+    /* text-align: center; */
     text-transform: capitalize;
     color: var(--secondary);
     margin-bottom: 1rem;
+    font-size: 1.7em;
+    font-family: 'poppins-bold';
 }
 .section-heading span{
     color: var(--primary);
+    font-family: 'poppins-bold';
 }
-.position-absolute{
-    position: absolute;
+.para{
+    letter-spacing: 0.4px;
+    line-height: 27px;
+    color: var(--secondary);
 }
-.position-relative{
-    position: relative;
+.globe-hover{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.border-radius-100{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.border-radius-10{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.font-size-11{
+    font-size: 11px;
 }
 .color-primary{
     color: var(--primary);
@@ -65,11 +117,17 @@
 .color-ternary{
     color: var(--ternary);
 }
+.color-play-button{
+    color: var(--play-button);
+}
 .light-yellow-color{
     color: var(--light-yellow);
 }
 .back-primary{
     background-color: var(--primary);
+}
+.back-primarya{
+    background-color: var(--primarya);
 }
 .back-graay{
     background-color: var(--graay);
@@ -83,37 +141,12 @@
 .back-yellow{
     background-color: var(--yellow-color);
 }
-.text-center{
-    text-align: center;
-}
-.display-grid{
-    display: grid;
-    grid-column-gap: 2rem;
-}
-.display-grid-three{
-    grid-template-columns: repeat(3, 1fr);
-}
-.display-grid-two{
-    grid-template-columns: repeat(2, 1fr);
-}
-.flex{
-    display: flex;
-}
-.flex-direction-column{
-    flex-direction: column;
-}
-.items-center{
-    align-items: center;
-}
-.justify-between{
-    justify-content: space-between;
-}
-.justify-center{
-    justify-content: center;
-}
-.margin-center{
-    margin: 0 auto;
-}
+
+
+
+
+
+
 .margin-top-12{
     margin-top: 12rem;
 }
@@ -135,35 +168,8 @@
 .margin-top-6{
     margin-top: 6rem;
 }
-.margin-top-5{
-    margin-top: 5rem;
-}
-.margin-top-4{
-    margin-top: 4rem;
-}
-.margin-top-3{
-    margin-top: 3rem;
-}
-.margin-top-2{
-    margin-top: 2rem;
-}
-.margin-bottom-1{
-    margin-bottom: 1rem;
-}
 .margin-bottom-23{
     margin-bottom: 23px;
-}
-.margin-bottom-2{
-    margin-bottom: 2rem;
-}
-.margin-bottom-3{
-    margin-bottom: 3rem;
-}
-.margin-bottom-4{
-    margin-bottom: 4rem;
-}
-.margin-bottom-5{
-    margin-bottom: 5rem;
 }
 .margin-bottom-6{
     margin-bottom: 6rem;
@@ -173,6 +179,27 @@
 }
 .margin-bottom-8{
     margin-bottom: 8rem;
+}
+.padding-top-12{
+    padding-top: 12rem;
+}
+.padding-top-11{
+    padding-top: 11rem;
+}
+.padding-top-10{
+    padding-top: 10rem;
+}
+.padding-top-9{
+    padding-top: 9rem;
+}
+.padding-top-8{
+    padding-top: 8rem;
+}
+.padding-top-7{
+    padding-top: 7rem;
+}
+.padding-top-6{
+    padding-top: 6rem;
 }
 .padding-left-1{
     padding-left: 1rem;
@@ -222,3 +249,19 @@
 .padding-right-8{
     padding-right: 8rem;
 }
+.poppins-regular{
+    font-family: 'poppins-regular';
+}
+.poppins-medium{
+    font-family: 'poppins-medium';
+}
+.poppins-bold{
+    font-family: 'poppins-bold';
+}
+.poppins-semibold{
+    font-family: 'poppins-semibold';
+}
+.font-weight-200{
+    font-weight: 200;
+}
+/* Utility styling end */

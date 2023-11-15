@@ -1,304 +1,399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>travel-agency</title>
-    <link rel="icon" type="image/x-icon" href="./material/logo/favicon.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script link -->
+    <script src="./JS/script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- index styling -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/utility.css">
+
     <!-- FONT AWESOME -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Hello, world!</title>
 </head>
 
 <body>
-    <div class="top-bar-header container">
-        <!-- navigation bar section -->
-        <nav>
-            <div class="wrapper flex items-center justify-between">
-                <div class="logo-name">
-                    <div class="imge">
-                        <img src="./material/logo/logo.png" alt="">
-                    </div>
-                    <h3>company name</h3>
-                </div>
-                <div class="links">
-                    <a href="#">home</a>
-                    <a href="#">about</a>
-                    <a href="#">events</a>
-                    <a href="#">blog</a>
-                    <a href="#">contact</a>
-                </div>
-                <div class="tel flex items-center color-ternary back-primary">
-                    <div class="icon"><i class="fa fa-phone"></i></div>
-                    <div class="num">
-                        <p>+1 (000) 000 000</p>
-                    </div>
+    <div class="nav-header container-fluid padding-top pt-4">
+
+        <!-- Naviagtion bar start-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand position-relative" href="./index.html">
+                    <img src="./material/logo/logo.png" class="img-fluid" style="height: 58px;" alt="log">
+                    <span class=" logo-name color-ternary position-absolute">Company name</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">!!!</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
+        <!-- Naviagtion bar end-->
 
-        <!-- header section -->
-        <header class="main-header flex justify-between">
-            <div class="left-box">
-                <h1 class="color-secondary"><span class="color-primary">Life is a journey</span>, not a destination</h1>
-                <p class="p color-gray">Let's start your journey with us, your dream will come true.</p>
-                <div class="left-box-buttons flex items-center">
-                    <p class="explore color-ternary back-primary">Explore Destinations</p>
-                    <div class="flex items-center">
-                        <div class="play-button-icon back-ternary"><i class="fa fa-play"></i></div>
-                        <div>
-                            <p class="color-secondary">Watch how it works</p>
+
+        <!-- Header section start -->
+        <header class="margin-top-6">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row pb-5">
+                        <div class="left-box col-8 col-sm-8 col-md-6 col-lg-6 col-xxl-6">
+                            <h1 class="color-secondary pb-2"><span class="color-primary">Life is a
+                                    journey</span>, not a destination</h1>
+                            <p class="header-txt color-gray pb-2">Let's start your journey with us, your dream will come true.</p>
+                            <div class="wrap d-flex align-items-center">
+                                <a href="#" class="color-ternary back-primary text-decoration-none">Explore Destination</a>
+                                <div class="header-icon d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-play back-ternary"></i>
+                                    <p class="color-secondary mb-0">Watch how it works</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-box col-4 col-sm-4 col-md-6 col-lg-6 col-xxl-6 mx-auto">
+                            <figure>
+                                <img src="./material/images/banner.png" class="img-fluid" style="width: 90%;" alt="banner-img">
+                            </figure>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right-box">
-                <img src="./material/images/banner.png" alt="">
-            </div>
         </header>
+        <!-- Header section end -->
     </div>
 
 
-    <!-- TOUR SECTION -->
-    <section class="tour margin-top-8">
+
+
+    <!-- Our best section start -->
+    <section class="our-best container-fluid margin-top-8">
         <div class="container">
-            <div class="top-box flex flex-direction-column items-center">
-                <h1 class="section-heading"><span>check our best</span> promotional tour</h1>
-                <p class="text-center color-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.</p>
+            <div class="row first-row">
+                <div class="wrap col-11 col-sm-8 col-md-8 col-lg-8 col-xxl-8 text-center mx-auto">
+                    <h1 class="section-heading"><span>Check our best</span> Promotional Tour</h1>
+                    <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.</p>
+                </div>
             </div>
-            <div class="wrapper display-grid display-grid-three">
-                <div class="wrap flex flex-direction-column items-center justify-center">
-                    <div class="imge">
-                        <img src="./material/images/beijing.png" alt="">
-                    </div>
-                    <p class="color-primary">Beijing</p>
+            <div class="row second-box mt-3">
+                <div class="boxa col-10 col-sm-4 col-md-4 col-lg-4 col-xxl-4 mx-auto text-center">
+                    <figure>
+                        <img src="./material/images/pakistan.png" class="img-fluid" alt="pakistan image">
+                    </figure>
+                    <span class="text-center">Pakistan</span>
                 </div>
-                <div class="wrap flex flex-direction-column items-center justify-center">
-                    <div class="imge">
-                        <img src="./material/images/pakistan.png" alt="">
-                    </div>
-                    <p class="color-primary">Beijing</p>
+                <div class="boxa col-10 col-sm-4 col-md-4 col-lg-4 col-xxl-4 mx-auto text-center">
+                    <figure>
+                        <img src="./material/images/beijing.png" class="img-fluid" alt="beijing image">
+                    </figure>
+                    <span class="text-center">Beijing</span>
                 </div>
-                <div class="wrap flex flex-direction-column items-center justify-center">
-                    <div class="imge">
-                        <img src="./material/images/turkey.png" alt="">
-                    </div>
-                    <p class="color-primary">Beijing</p>
+                <div class="col-10 col-sm-4 col-md-4 col-lg-4 col-xxl-4 mx-auto text-center">
+                    <figure>
+                        <img src="./material/images/turkey.png" class="img-fluid" alt="turkey image">
+                    </figure>
+                    <span class="text-center">Turkey</span>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Our best section end -->
 
 
-    <!-- GLOBALLY SECTION -->
-    <section class="global margin-top-10">
+
+    <!-- globally accept section start -->
+    <section class="globally-accept container-fluid margin-top-9">
         <div class="container">
-            <div class="top-box flex flex-direction-column items-center justify-center">
-                <h1 class="section-heading"><span>Globally</span> Accepted</h1>
-                <p class="text-center color-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem
-                    Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknownn
-                    printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="wrapper display-grid display-grid-two">
-                <div class="wrap flex items-center justify-center">
-                    <div class="imge left-img back-box-back">
-                        <img src="./material/images/local.png" alt="">
-                    </div>
-                </div>
-                <div class="wrap flex items-center justify-center">
-                    <div class="imge imgee position-relative">
-                        <img src="./material/images/local.png" alt="">
-                        <div class="upper flex flex-direction-column items-center justify-center position-absolute">
-                            <h2 class="color-ternary">For International</h2>
-                            <button class="color-ternary">Start Trip Today</button>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="wrap col-11 col-sm-8 col-md-8 col-lg-8 col-xxl-8 text-center mx-auto">
+                    <h1 class="section-heading"><span>Globally </span>Accepted</h1>
+                    <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- WATCH OUR LATTEST TOUR SECTION -->
-    <section class="lattest margin-top-10">
-        <div class="container">
-            <div class="wrapper flex justify-between">
-                <div class="wrap">
-                    <div class="hero position-relative">
-                        <h2 class="her color-secondary position-absolute"><span class="color-primary">Watch</span> our
-                            lattest tour</h2>
-                        <div class="yellow-circle position-absolute"></div>
-                    </div>
-                    <p class="color-secondary">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to
-                        make a type specimen book.</p>
-                    <div class="link"><a href="#" class="color-primary">learn more</a></div>
-                </div>
-
-                <div class="right-box position-relative">
-                    <div class="imge">
-                        <img src="./material/images/zipline.png" alt="">
-                    </div>
-                    <div class="icon position-absolute back-ternary flex items-center justify-center"><i
-                            class="fa fa-play"></i></div>
-                    <div class="red-square position-absolute back-primary"></div>
-                    <div class="yellow-square position-absolute"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- CHOOSE US SECTION -->
-    <section class="choose container margin-top-10">
-        <div class="top-box flex flex-direction-column items-center justify-center">
-            <h1 class="section-heading"><span>Why</span> Choose Us</h1>
-            <p class="color-secondary text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s.</p>
-        </div>
-        <div class="wrapper display-grid display-grid-three margin-top-4">
-
-            <div class="wrap position-relative padding-left-2 padding-right-2">
-                <div class="icon position-absolute back-primary color-ternary"><i class="fa fa-star"></i></div>
-                <div class="box text-center">
-                    <h3 class="color-primary margin-bottom-2 margin-top-5">Handpicked Hotels</h3>
-                    <p class="color-secondary margin-bottom-3">Lorem ipsum dolor sit amet, consect adipiscing elit.
-                        Aenean
-                        commodo ligula eget dolor.
-                        Aenean massa</p>
-                </div>
-            </div>
-
-            <div class="wrap position-relative padding-left-2 padding-right-2">
-                <div class="icon position-absolute back-yellow color-ternary text-center"><i
-                        class="fa fa-earth-asia"></i></div>
-                <div class="box text-center">
-                    <h3 class="color-primary margin-bottom-2 margin-top-5">World Class Services</h3>
-                    <p class="color-secondary margin-bottom-3">Lorem ipsum dolor sit amet, consect adipiscing elit.
-                        Aenean
-                        commodo ligula eget dolor.
-                        Aenean massa</p>
-                </div>
-            </div>
-
-            <div class="wrap position-relative padding-left-2 padding-right-2">
-                <div class="icon position-absolute color-ternary back-graay"><i class="fa-solid fa-thumbs-up"></i></div>
-                <div class="box text-center">
-                    <h3 class="color-primary margin-bottom-2 margin-top-5">Best Price Guraantee</h3>
-                    <p class="color-secondary margin-bottom-3">Lorem ipsum dolor sit amet, consect adipiscing elit.
-                        Aenean
-                        commodo ligula eget dolor.
-                        Aenean massa</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- CUSTOMER SAY SECTION -->
-    <section class="custom container margin-top-7">
-        <div class="wrapper flex justify-between margin-top-2">
-            <div class="left-box padding-right-3">
-                <div class="test flex items-center ">
-                    <div class="line back-graay"></div>
-                    <p class="paragh color-secondary">TESTIMONIAL</p>
-                </div>
-
-                <h1 class="color-primary margin-bottom-23">What Customers Say?</h1>
-                <div class="par color-secondary">
-                    <div class="par-one margin-bottom-1">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </div>
-                    <div class="par-two margin-bottom-1">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </div>
-                    <div class="par-three">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </div>
-                </div>   
-                <div class="box-button position-relative flex items-center color-primary margin-top-2">
-                    <p class="">Write Your Thought</p>
-                    <div class="icon position-absolute"><i class="fa-solid fa-arrow-right-long"></i></div>
-                </div>
-            </div>
-
-            <div class="right-box position-relative">
-                <div class="imge">
-                    <img src="/material/images/customer-say.png" alt="">
-                </div>
-                <div class="wrap position-absolute">
-                    <p class="right-paragh margin-bottom-1 color-secondary">Lorem Ipsum is simply dummy text of the
-                        printing
-                        and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the
-                        1500s,</p>
-                    <div class="flex items-center justify-between">
-                        <p class="name">Alex Smith</p>
-                        <div class="flex flex-direction-column items-center justify-center">
-                            <div class="icon flex light-yellow-color">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+            <div class="row second-box mx-auto mt-3">
+                <figure class="col-6 col-sm-6 col-md-6 col-lg-5 back-box-back border-radius-10 mx-auto col-xxl-5 mx-auto  text-center">
+                    <!-- <figure> -->
+                    <img src="./material/images/local.png" class="globe-img img-fluid" alt="Globall Accepted">
+                    <!-- </figure> -->
+                </figure>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-5 mx-auto col-xxl-5 mx-auto text-center">
+                    <div class="wrapper">
+                        <figure class="position-relative border-radius-10">
+                            <img src="./material/images/local.png" class="globe-img img-fluid" alt="Globall Accepted">
+                            <div class="globe-hover border-radius-10 position-absolute d-flex flex-column align-items-center justify-content-center">
+                                <h2 class="color-ternary mb-3">For International</h2>
+                                <a href="#" class="color-ternary text-decoration-none">Start Trip Today</a>
                             </div>
-                            <p class="rev color-secondary">21 Reviews</p>
-                        </div>
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- globally accept section end -->
 
-    <section class="footer back-primary color-ternary margin-top-12">
+
+
+
+    <!-- Lattest tour section start -->
+    <section class="lattest-tour container-fluid margin-top-9">
         <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xxl-7 mx-auto">
+                    <div class="wrapper position-relative">
+                        <figure>
+                            <img src="./material/icons/Ellipse.png" class="img-fluid yellow-img" alt="tour icon">
+                        </figure>
+                        <h1 class="section-heading position-absolute"><span>Watch </span> our lattest tour</h1>
+                        
+                    </div>
+                    <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.</p>
+                    <a href="#" class="learn-tour color-primary">Learn More</a>
+                </div>
+                <div class="right-box col-12 col-sm-12 col-md-6 col-lg-4 col-xxl-4 right-box mx-auto">
+                    <div class="position-relative">
+                        <figure class="position-absolute">
+                            <img src="./material/images/zipline.png" class="tour-img border-radius-10 img-fluid" alt="Zipline line image">
+                        </figure>
+                        <div class="icon position-absolute color-play-button back-ternary"><i class="fa fa-play"></i></div>
+                        <div class="red-square position-absolute back-primary"></div>
+                        <div class="yellow-square position-absolute back-yellow"></div>
+                    </div>
+                </div>
+                <a href="#" class="tour-learn color-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Lattest tour section end -->
 
-            <div class="wrapper flex flex-direction-column justify-center items-center ">
-                <div class="top-box flex items-center">
-                    <div class="img-logo position-relative">
-                        <div class="imge">
-                            <img src="./material/logo/logo-two.png" alt="">
+
+
+
+
+    <!-- Choose us section start -->
+    <section class="choose-us container-fluid margin-top-9">
+        <div class="container">
+            <div class="row">
+                <div class="wrap col-11 col-sm-8 col-md-8 col-lg-8 col-xxl-8 text-center mx-auto">
+                    <h1 class="section-heading"><span>Why</span>Choose Us</h1>
+                    <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="box  col-10 col-sm-5 col-md-4 col-lg-4 col-xxl-4 position-relative mx-auto d-flex flex-column align-items-center justify-content-between text-center">
+                    <div class="icon position-absolute d-flex align-items-center justify-content-center back-primary color-ternary"><i class="fa fa-star"></i></div>
+                    <h4 class="text-center color-primary mt-3 mb-4">Handpicked Hotels</h4>
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                        massa</p>
+                </div>
+                <div class="box col-10 col-sm-5 col-md-4 col-lg-4 col-xxl-4 position-relative mx-auto d-flex flex-column align-items-center justify-content-between text-center">
+                    <div class="icon position-absolute d-flex align-items-center justify-content-center back-yellow color-ternary"><i class="fa fa-earth-asia"></i>
+                    </div>
+                    <h4 class="text-center color-primary mt-3 mb-4">World Class Services</h4>
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                        massa</p>
+                </div>
+                <div class="box last-box col-10 col-sm-11 col-md-4 col-lg-4 col-xxl-4 position-relative mx-auto d-flex flex-column align-items-center justify-content-between text-center">
+                    <div class="icon position-absolute d-flex align-items-center justify-content-center back-graay color-ternary"><i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <h4 class="text-center color-primary mt-3 mb-4">Best Price Gurantee</h4>
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                        massa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Choose us section end -->
+
+
+
+
+
+    <!-- customer say section start -->
+    <section class="customer-say container-fluid margin-top-8">
+        <div class="container">
+            <div class="row">
+                <!-- left box -->
+                <div class="box col-11 col-sm-12 col-md-5 col-lg-5 col-xl-6 col-xxl-6">
+                    <div class="test d-flex align-items-center">
+                        <div class="line back-graay position-relative"></div>
+                        <p class="paragh color-gray">TESTIMONIAL</p>
+                    </div>
+
+                    <h1 class="color-primary margin-bottom-23">What Customers Say?</h1>
+                    <div class="para color-secondary">
+                        <div class="para mb-3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </div>
-                        <span class="color-black position-absolute">Company Name</span>
+                        <div class="para mb-3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="para mb-3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
                     </div>
-                    <p>Domestic <br> International <br> Tours</p>
+                    <div class="box-button mt-4 d-flex align-items-center justify-content-between color-primary margin-top-2">
+                        <p class="mb-0">Write Your Thought</p>
+                        <div class="icon d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    </div>
                 </div>
 
-                <div class="middle-box flex flex-direction-column items-center margin-top-2 ">
-                    <h3 class="icon-color margin-bottom-1">Subscribe to get our Newsletter</h3>
-                    <div class="input-subs flex items-center">
-                        <input type="text" name="email" placeholder="Your Email">
-                        <button>Subscribe</button>
-                    </div>
-                </div>
-
-                <div class="last-box flex flex flex-direction-column items-center margin-top-3 ">
-                    <div class="links flex items-center margin-bottom-1">
-                        <a href="#">Careers</a>
-                        <a href="#">Privacy policy</a>
-                        <div class="icon color-ternary padding-right-1">|</div>
-                        <a href="#">Terms & Conditions</a>
-                    </div>
-                    <div class="tour">
-                        <p>&copy; 2023 Tourism Department</p>
+                <!-- right box -->
+                <div class="box last-box position-relative col-10 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
+                    <figure class="position-absolute">
+                        <img src="/material/images/customer-say.png" class="img-fluid customer-img border-radius-10" style="height: 480px;" alt="customer pic">
+                    </figure>
+                    <div class="wrap position-absolute">
+                        <p class="para right-paragh mb-1 color-secondary">Lorem Ipsum is simply dummy text of the
+                            printing
+                            and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the
+                            1500s,</p> 
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="name">Alex Smith</p>
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <div class="icon flex light-yellow-color font-size-11">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="rev color-gray mt-1 font-size-11">21 Reviews</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- customer say section end -->
+
+
+
+
+
+    <!-- footer section start -->
+    <footer class="container-fluid margin-top-12">
+        <div class="container pt-5 pb-4">
+            <div class="wrapper d-flex flex-column justify-content-center align-items-center ">
+                <div class="top-box d-flex align-items-center">
+                    <div class="img-logo position-relative">
+                        <figure>
+                            <img src="./material/logo/logo-two.png" class="img-fluid" alt="logo">
+                        </figure>
+                        <span class="color-ternary position-absolute">Company Name</span>
+                    </div>
+                    <p class="color-ternary">Domestic <br> International <br> Tours</p>
+                </div>
+
+                <div class="middle-box d-flex flex-column align-items-center mt-3 mb-4 ">
+                    <h2 class="icon-color mb-3">Subscribe to get our Newsletter</h2>
+                    <div class="input-subs d-flex align-items-center">
+                        <input class="color-ternary" type="text" name="email" placeholder="Your Email">
+                        <button class="back-yellow color-black poppins-medium border-radius-100">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="last-box d-flex flex-column align-items-center mt-3 ">
+                    <div class="links d-flex align-items-center mb-1">
+                        <a href="#" class="color-ternary poppins-regular text-decoration-none">Careers</a>
+                        <a href="#" class="color-ternary poppins-regular text-decoration-none">Privacy policy</a>
+                        <div class="icon color-ternary padding-right-1">|</div>
+                        <a href="#" class="color-ternary poppins-regular text-decoration-none">Terms & Conditions</a>
+                    </div>
+                    <div class="tour mt-2">
+                        <p class="color-ternary poppins-regular">&copy; 2023 Tourism Department</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+
+
+
+
+    <!-- Back to Top start -->
+    <div class="container-fluid">
+        <a id="back-to-top" href="#">
+            Back to Top
+        </a>
+    </div>
+    <!-- Back to Top end -->
+
+
+
+
+
+    <!-- Popper and Bootstrap JS start -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Popper and Bootstrap JS end -->
+
+
+    <!-- Back to top script start -->
+    <script>
+        (function () {
+            var backToTopButton = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+
+            backToTopButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        })();
+    </script>
+    <!-- Back to top script start -->
 </body>
 
 </html>
